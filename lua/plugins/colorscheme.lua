@@ -23,18 +23,12 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine-main",
+      colorscheme = "catppuccin",
+      --      colorscheme = "rose-pine-main",
       -- colorscheme = "zero",
       -- colorscheme = "darkvoid",
     },
   },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox",
-    },
-  },
-
   {
     "ellisonleao/gruvbox.nvim",
     opts = {
@@ -42,13 +36,13 @@ return {
       terminal_colors = true,
       palette_overrides = {
         -- Your existing background overrides
-        dark0_hard = "#111827",
-        dark0 = "#111827",
-        dark0_soft = "#111827",
-        dark1 = "#111827",
-        dark2 = "#111827",
-        dark3 = "#111827", -- If this was #111827, Visual's default bg would be #111827
-        dark4 = "#111827",
+        -- dark0_hard = "#111827",
+        -- dark0 = "#111827",
+        -- dark0_soft = "#111827",
+        -- dark1 = "#111827",
+        -- dark2 = "#111827",
+        -- dark3 = "#111827", -- If this was #111827, Visual's default bg would be #111827
+        -- dark4 = "#111827",
         -- ... any other palette overrides you have
       },
       overrides = {
@@ -77,11 +71,5 @@ return {
         -- Comment = { fg = "#928374" },
       },
     },
-  },
-  { "aliqyan-21/darkvoid.nvim" },
-
-  {
-    "bjarneo/zero.nvim",
-    -- dir = "~/Code/zero.nvim",
   },
 }
