@@ -28,4 +28,23 @@ return {
     dependencies = { "MunifTanjim/nui.nvim" },
     opts = {},
   },
+  {
+    "f-person/auto-dark-mode.nvim",
+    config = function()
+      require("auto-dark-mode").setup({
+        set_dark_mode = function()
+          -- Your dark mode setup
+          vim.o.background = "dark"
+          vim.cmd("colorscheme ash")
+          -- You can also set other options here, like for a statusline
+        end,
+        set_light_mode = function()
+          -- Your light mode setup
+          vim.o.background = "light"
+          vim.cmd("colorscheme snow")
+          -- You can also set other options here
+        end,
+      })
+    end,
+  },
 }
