@@ -65,10 +65,7 @@ return {
         -- IndentBlanklineContextChar = { fg = "#bdae93" }, -- Gruvbox light3 for a slightly different brightness
 
         -- [[ COLOR FOR VISUAL SELECTION ]]
-        Visual = { bg = "#4a4a4a" }, -- Selection background
-
-        -- [[ CURRENT LINE HIGHLIGHT ]]
-        CursorLine = { bg = "#333333" },
+        Visual = { bg = "#504945" }, -- Selection background
 
         -- [[ OTHER OVERRIDES ]]
         -- Comment = { fg = "#928374" },
@@ -87,13 +84,6 @@ return {
     priority = 1000,
     config = function()
       vim.cmd([[colorscheme snow]])
-    end,
-  },
-  {
-    "bjarneo/nes.nvim", -- The name of the directory you moved
-    -- A good practice is to set the colorscheme right here
-    config = function()
-      vim.cmd.colorscheme("nes")
     end,
   },
 }
